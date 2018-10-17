@@ -1,0 +1,9 @@
+﻿@model conecta.Models.Respuesta
+  
+
+<p> Resultado: @Html.DisplayFor(model => model.code)</p>
+<p> Error: @Html.DisplayFor(model => model.error)</p>
+<p> Orden de Pago: @Html.DisplayFor(model => model.transactionResponse.orderId)</p>
+<p> IDTransacción: @Html.DisplayFor(model => model.transactionResponse.transactionId)</p>
+<p> Código de Respuesta: @Html.DisplayFor(model => model.transactionResponse.responseCode)</p>
+<p> Mensaje de Respuesta: @Html.DisplayFor(model => model.transactionResponse.responseMessage)</p>
